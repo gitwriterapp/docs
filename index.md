@@ -16,11 +16,12 @@ GitWriter is a minimal, writer-first mobile Markdown editor backed by Git. We be
 - **Privacy** - We don't store your content on our servers
 - **Open Source** - Transparent development and community contributions
 
-## Quick Links
+## Support
 
-- [GitHub Repository](https://github.com/yourusername/gitwriter)
-- [Report an Issue](https://github.com/yourusername/gitwriter/issues)
+Need help? Here's how to get support:
+
+- **Report a Bug or Request a Feature** - Email us at [brooks110@proton.me](mailto:brooks110@proton.me)
 
 ---
 
-*Last updated: January 5, 2026*
+_Last updated: January 5, 2026_
