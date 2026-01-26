@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   background-color: var(--background);
   color: var(--foreground);
   line-height: 1.6;
@@ -55,6 +55,15 @@ img {
 
 ul {
   list-style: none;
+}
+
+.badge {
+  background-color: var(--primary);
+  color: var(--accent-foreground);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 /* ===== Utility Classes ===== */
@@ -117,7 +126,6 @@ ul {
   left: 0;
   right: 0;
   z-index: 50;
-  background-color: hsl(0, 0%, 0%);
 }
 
 .header-container {
@@ -156,11 +164,12 @@ ul {
 
 .nav-link {
   color: var(--muted-foreground);
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .nav-link:hover {
   color: var(--foreground);
+  text-decoration: underline;
 }
 
 @media (min-width: 768px) {
@@ -204,7 +213,7 @@ ul {
 
 .hero-title {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1.5rem;
   line-height: 1;
 }
@@ -245,6 +254,13 @@ ul {
   margin-bottom: 2rem;
   font-size: 0.875rem;
   color: var(--muted-foreground);
+}
+
+.platforms-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
 }
 
 @media (min-width: 1024px) {
@@ -317,13 +333,19 @@ ul {
 .hero-mockup {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .iphone-mockup {
-  width: 100%;
+  width: 50%;
   max-width: 300px;
 }
+.login-mockup {
+  width: 50%;
+  max-width: 300px;
+}
+
 /* ===== Sections ===== */
 .section {
   padding: 5rem 1rem;
@@ -737,23 +759,6 @@ ul {
   gap: 2rem;
 }
 
-@media (min-width: 768px) {
-  .footer-grid {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.footer-brand {
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .footer-brand {
-    text-align: left;
-  }
-}
-
 .footer-tagline {
   font-size: 0.875rem;
   color: var(--muted-foreground);
@@ -765,6 +770,7 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 1.5rem;
 }
 
@@ -775,6 +781,7 @@ ul {
 
 .footer-link:hover {
   color: var(--foreground);
+  text-decoration: underline;
 }
 
 .footer-stores {
@@ -799,12 +806,6 @@ ul {
 .footer-bottom {
   margin-top: 1rem;
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .footer-bottom {
-    text-align: left;
-  }
 }
 
 .copyright {
