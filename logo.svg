@@ -1,0 +1,29 @@
+<svg width="48" height="48" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- 
+    Group 1: The Rings (Donuts)
+    Drawn as filled shapes with holes using fill-rule="evenodd".
+    Outer Radius: 24 | Inner Radius: 12
+  -->
+  <path fill="white" fill-rule="evenodd" d="
+    M 24 30 A 24 24 0 1 0 24 78 A 24 24 0 1 0 24 30 Z M 24 42 A 12 12 0 1 1 24 66 A 12 12 0 1 1 24 42 Z
+    M 64 130 A 24 24 0 1 0 64 178 A 24 24 0 1 0 64 130 Z M 64 142 A 12 12 0 1 1 64 166 A 12 12 0 1 1 64 142 Z
+    M 104 60 A 24 24 0 1 0 104 108 A 24 24 0 1 0 104 60 Z M 104 72 A 12 12 0 1 1 104 96 A 12 12 0 1 1 104 72 Z
+    M 144 130 A 24 24 0 1 0 144 178 A 24 24 0 1 0 144 130 Z M 144 142 A 12 12 0 1 1 144 166 A 12 12 0 1 1 144 142 Z
+    M 184 30 A 24 24 0 1 0 184 78 A 24 24 0 1 0 184 30 Z M 184 42 A 12 12 0 1 1 184 66 A 12 12 0 1 1 184 42 Z
+  "/>
+
+  <!-- 
+    Group 2: The Connecting Lines
+    Drawn as strokes with 'butt' caps.
+    The coordinates are calculated to start exactly at the hole edge (Radius 12),
+    ensuring they don't cross into the transparent center.
+  -->
+  <path stroke="white" stroke-width="12" stroke-linecap="butt" d="
+    M 28.46 65.14 L 59.54 142.86
+    M 69.95 143.58 L 98.05 94.42
+    M 109.95 94.42 L 138.05 143.58
+    M 148.46 142.86 L 179.54 65.14
+  "/>
+  
+</svg>
