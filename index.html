@@ -58,9 +58,11 @@
       </div>
     </header>
 
+
     <main>
       <!-- Hero Section -->
       <section class="hero">
+        <canvas id="contour-canvas"></canvas>
         <div class="container">
           <div class="hero-grid">
             <div class="hero-content">
@@ -74,8 +76,8 @@
 
               <div class="platforms">
                 <span
-                  >Download <span class="badge">FREE</span> on iOS &
-                  Android</span
+                  >Download <span class="badge">FREE</span> on iOS, coming soon
+                  to Android</span
                 >
               </div>
 
@@ -398,15 +400,46 @@ A **simple** paragraph with *emphasis*.
 - Easy to write
 - Works everywhere
 
-> "Markdown is the writer's 
+> "Markdown is the writer's
 > best friend."
 
 ```
 Code blocks work too!
 ```</code></pre>
             </div>
-          </div>
+
+            
         </div>
+        <div class="markdown-content">
+            <p class="section-description text-left">Learn why markdown is the future and how it can transform your writing experience.</p>
+            <ul class="links-list">
+              <li>How Markdown Took Over the World<br/>
+                <a href="https://www.anildash.com/2026/01/09/how-markdown-took-over-the-world/" class="markdown-link" target="_blank" rel="noopener">
+                  https://www.anildash.com/2026/01/09/how-markdown-took-over-the-world/
+                </a>
+              </li>
+              <li>Why I Use Markdown, and Why You Should Too<br/>
+                <a href="https://relston.github.io/markdown/writing/2024/07/31/why-use-markdown.html" class="markdown-link" target="_blank" rel="noopener">
+                  https://relston.github.io/markdown/writing/2024/07/31/why-use-markdown.html
+                </a>
+              </li>
+              <li>The Underestimated Power of Markdown<br/>
+                <a href="https://reifschneider.digital/blog/underestimated-power-markdown" class="markdown-link" target="_blank" rel="noopener">
+                  https://reifschneider.digital/blog/underestimated-power-markdown
+                </a>
+              </li>
+              <li>Why Has Markdown Become So Popular?<br/>
+                <a href="https://www.reddit.com/r/webdev/comments/1b5ofta/why_has_markdown_become_so_popular/" class="markdown-link" target="_blank" rel="noopener">
+                  https://www.reddit.com/r/webdev/comments/1b5ofta/why_has_markdown_become_so_popular/
+                </a>
+              </li>
+              <li>Markdown's Enduring Impact: 2004-2026<br/>
+                <a href="https://www.webpronews.com/markdowns-enduring-impact-revolutionizing-web-writing-from-2004-to-2026/" class="markdown-link" target="_blank" rel="noopener">
+                  https://www.webpronews.com/markdowns-enduring-impact-revolutionizing-web-writing-from-2004-to-2026/
+                </a>
+              </li>
+            </ul>
+          </div>
       </section>
 
       <!-- Mobile Section -->
@@ -1331,7 +1364,8 @@ Code blocks work too!
           <div class="platforms-bottom">
             <div class="platforms">
               <span
-                >Download <span class="badge">FREE</span> on iOS & Android</span
+                >Download <span class="badge">FREE</span> on iOS, coming soon to
+                Android</span
               >
             </div>
 
@@ -1378,5 +1412,7 @@ Code blocks work too!
         </div>
       </div>
     </footer>
+    <script src="./contour-animation.js"></script>
+
   </body>
 </html>
