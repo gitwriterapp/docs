@@ -39,6 +39,7 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   line-height: 1.6;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -57,13 +58,25 @@ ul {
   list-style: none;
 }
 
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
 .badge {
   background-color: var(--primary);
   color: var(--accent-foreground);
   padding: 0.25rem 0.5rem;
   border-radius: 9999px;
-  font-size: 0.75rem;
   font-weight: 600;
+  font-size: 0.75rem;
 }
 
 /* ===== Utility Classes ===== */
@@ -95,7 +108,6 @@ ul {
   padding: 0.5rem 1rem;
   border-radius: var(--radius);
   font-size: 0.875rem;
-  font-weight: 500;
   cursor: pointer;
   border: none;
   font-family: inherit;
@@ -153,7 +165,6 @@ ul {
 
 .logo-text {
   font-size: 1.25rem;
-  font-weight: 600;
 }
 
 .nav {
@@ -213,7 +224,6 @@ ul {
 
 .hero-title {
   font-size: 2.5rem;
-  font-weight: 500;
   margin-bottom: 1.5rem;
   line-height: 1;
 }
@@ -327,7 +337,6 @@ ul {
 
 .store-name {
   font-size: 0.875rem;
-  font-weight: 600;
 }
 
 .hero-mockup {
@@ -362,7 +371,6 @@ ul {
 
 .section-title {
   font-size: 1.875rem;
-  font-weight: 700;
   margin-bottom: 1rem;
 }
 
@@ -456,7 +464,6 @@ ul {
 
 .feature-title {
   font-size: 1.125rem;
-  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
@@ -490,7 +497,6 @@ ul {
 
 .feature-title-sm {
   font-size: 1rem;
-  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
@@ -546,7 +552,6 @@ ul {
 
 .benefit-title {
   font-size: 0.875rem;
-  font-weight: 600;
   margin-bottom: 0.25rem;
 }
 
@@ -633,7 +638,6 @@ ul {
   border-radius: 9999px;
   margin-bottom: 1rem;
   font-size: 0.875rem;
-  font-weight: 500;
 }
 
 /* ===== Pricing Section ===== */
@@ -664,7 +668,6 @@ ul {
 
 .pricing-name {
   font-size: 1.25rem;
-  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
@@ -674,7 +677,6 @@ ul {
 
 .pricing-price .price {
   font-size: 1.875rem;
-  font-weight: 700;
 }
 
 .pricing-price .period {
@@ -738,10 +740,6 @@ ul {
 .comparison-table td {
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--border);
-}
-
-.comparison-table th {
-  font-weight: 600;
 }
 
 .comparison-table tbody tr {
@@ -847,7 +845,6 @@ ul {
 
 .legal-title {
   font-size: 1.875rem;
-  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
@@ -868,13 +865,11 @@ ul {
 
 .legal-section h2 {
   font-size: 1.25rem;
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .legal-section h3 {
   font-size: 1.125rem;
-  font-weight: 500;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
 }
