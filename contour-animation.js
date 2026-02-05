@@ -52,7 +52,7 @@ class ContourAnimation {
     const numLines = 5;
     const TABLET_BREAKPOINT = 600;
     const isTablet = width >= TABLET_BREAKPOINT;
-    const maxContentHeight = height * 0.30;
+    const maxContentHeight = height * 0.3;
     const spacing = maxContentHeight / (numLines - 1);
 
     const extraWidth = 50;
