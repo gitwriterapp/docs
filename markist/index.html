@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markist - Track Anything. Keep It Private.</title>
+    <meta
+      name="description"
+      content="A privacy-first tracking app that stores your data as markdown files on your device. No servers, no accounts, no tracking. Track habits, routines, fitness, sleep, and more."
+    />
+    <meta name="author" content="Markist" />
+    <meta
+      name="keywords"
+      content="tracking, habits, routines, fitness, sleep, food, markdown, privacy, local-first, offline, ios"
+    />
+
+    <meta property="og:title" content="Markist - Track Anything. Keep It Private." />
+    <meta
+      property="og:description"
+      content="A privacy-first tracking app that stores your data as markdown files on your device. No servers, no accounts, no tracking."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og.png" />
+    <meta property="og:url" content="https://markist.app/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Markist - Track Anything. Keep It Private." />
+    <meta
+      name="twitter:description"
+      content="A privacy-first tracking app that stores your data as markdown files on your device. No servers, no accounts, no tracking."
+    />
+    <meta name="twitter:image" content="https://markist.app/og.png" />
+
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://markist.app/" />
+
+    <meta name="apple-itunes-app" content="app-id=6760238163, app-argument=https://markist.app" />
+
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Markist",
+        "description": "A privacy-first tracking app that stores your data as markdown files on your device. No servers, no accounts, no tracking.",
+        "applicationCategory": "HealthFitnessApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "downloadUrl": "https://apps.apple.com/us/app/markist/id6760238163"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Markist",
+        "url": "https://markist.app",
+        "logo": "https://markist.app/logo.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "brooks110@proton.me",
+          "contactType": "customer support"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="/" class="logo-link">
+          <img src="./logo.svg" alt="Markist" class="logo-img" />
+        </a>
+
+        <nav class="nav">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="/privacy.html" class="nav-link">Privacy</a>
+          <a href="/terms.html" class="nav-link">Terms</a>
+          <a href="https://gitwriter.io" class="nav-link" target="_blank" rel="noopener"
+            >GitWriter<span class="new-tag">New</span></a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <canvas id="contour-canvas"></canvas>
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <h1 class="hero-title">Track<br /><span class="text-primary">anything.</span></h1>
+              <p class="hero-description">
+                A privacy-first tracking app that stores your data as markdown files on your device.
+                No servers, no accounts, no tracking.
+              </p>
+
+              <div class="platforms">
+                <span>Download <span class="badge">FREE</span> on iOS</span>
+              </div>
+
+              <div id="download" class="download-buttons">
+                <a
+                  href="https://apps.apple.com/us/app/markist/id6760238163"
+                  style="display: inline-block"
+                  target="_blank"
+                >
+                  <img
+                    src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1744732800"
+                    alt="Download on the App Store"
+                    style="width: 164px; height: 55px; vertical-align: middle; object-fit: contain"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-mockup">
+              <picture>
+                <img
+                  sizes="(max-width: 451px) 100vw, 451px"
+                  srcset="
+                    iphone_trinoa_c_scale,w_200.png 200w,
+                    iphone_trinoa_c_scale,w_263.png 263w,
+                    iphone_trinoa_c_scale,w_316.png 316w,
+                    iphone_trinoa_c_scale,w_365.png 365w,
+                    iphone_trinoa_c_scale,w_410.png 410w,
+                    iphone_trinoa_c_scale,w_451.png 451w
+                  "
+                  src="iphone_trinoa_c_scale,w_451.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Privacy Guarantee Section -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Your Data Never Leaves Your Device</h2>
+            <p class="section-description">
+              We built Markist on a simple principle: you own your data. No servers, no accounts, no
+              tracking. Ever.
+            </p>
+          </div>
+
+          <div class="feature-grid-2">
+            <div class="feature-card">
+              <svg
+                class="feature-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <h3 class="feature-title">Zero Data Collection</h3>
+              <p class="feature-description">
+                No analytics, no crash reporting, no tracking pixels. We don't even know you use the
+                app.
+              </p>
+            </div>
+            <div class="feature-card">
+              <svg
+                class="feature-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+              </svg>
+              <h3 class="feature-title">No Servers</h3>
+              <p class="feature-description">
+                Everything stays on your iPhone. The only optional connection is end-to-end
+                encrypted iCloud sync.
+              </p>
+            </div>
+            <div class="feature-card">
+              <svg
+                class="feature-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <line x1="19" x2="19" y1="8" y2="14"></line>
+                <line x1="22" x2="16" y1="11" y2="11"></line>
+              </svg>
+              <h3 class="feature-title">No Accounts Required</h3>
+              <p class="feature-description">
+                No sign-up, no login, no email. Just open the app and start tracking.
+              </p>
+            </div>
+            <div class="feature-card">
+              <svg
+                class="feature-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                <path d="M10 9H8"></path>
+                <path d="M16 13H8"></path>
+                <path d="M16 17H8"></path>
+              </svg>
+              <h3 class="feature-title">Your Data is Plain Markdown</h3>
+              <p class="feature-description">
+                Human-readable files you can open in any text editor, back up anywhere, or import
+                into other apps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Track Anything Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Track Anything</h2>
+            <p class="section-description">
+              Habits, baby routines, workouts, sleep, meals, moods &mdash; if you can count it, you
+              can track it with Markist.
+            </p>
+          </div>
+
+          <div class="feature-grid-4">
+            <div class="feature-item-center">
+              <div class="feature-icon-circle">
+                <svg
+                  class="feature-icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                  <path d="m15 5 3 3"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title-sm">Habits</h3>
+              <p class="feature-description-sm">
+                Build streaks, track daily habits, and watch your consistency grow.
+              </p>
+            </div>
+            <div class="feature-item-center">
+              <div class="feature-icon-circle">
+                <svg
+                  class="feature-icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="feature-title-sm">Health</h3>
+              <p class="feature-description-sm">
+                Log workouts, track vitals, and monitor your wellness journey.
+              </p>
+            </div>
+            <div class="feature-item-center">
+              <div class="feature-icon-circle">
+                <svg
+                  class="feature-icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title-sm">Sleep</h3>
+              <p class="feature-description-sm">
+                Record sleep times, quality, and patterns to improve your rest.
+              </p>
+            </div>
+            <div class="feature-item-center">
+              <div class="feature-icon-circle">
+                <svg
+                  class="feature-icon-sm"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title-sm">Baby Routines</h3>
+              <p class="feature-description-sm">
+                Track feeds, naps, diapers, and milestones for your little one.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Markdown Section -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="markdown-grid">
+            <div class="markdown-content">
+              <h2 class="section-title text-left">Why Markdown?</h2>
+              <p class="section-description text-left">
+                Your tracking data is stored as plain markdown files &mdash; portable, future-proof,
+                and readable by anyone.
+              </p>
+
+              <div class="benefits-grid">
+                <div class="benefit-item">
+                  <svg
+                    class="benefit-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                    <path d="M10 9H8"></path>
+                    <path d="M16 13H8"></path>
+                    <path d="M16 17H8"></path>
+                  </svg>
+                  <div>
+                    <h3 class="benefit-title">Own Your Data</h3>
+                    <p class="benefit-description">
+                      No vendor lock-in. Your files work in any text editor, forever.
+                    </p>
+                  </div>
+                </div>
+                <div class="benefit-item">
+                  <svg
+                    class="benefit-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                    <path d="M18.375 2.625a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4Z"></path>
+                  </svg>
+                  <div>
+                    <h3 class="benefit-title">Human-Readable</h3>
+                    <p class="benefit-description">
+                      Open your daily logs in any app. No proprietary database.
+                    </p>
+                  </div>
+                </div>
+                <div class="benefit-item">
+                  <svg
+                    class="benefit-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" x2="12" y1="15" y2="3"></line>
+                  </svg>
+                  <div>
+                    <h3 class="benefit-title">Easy Export</h3>
+                    <p class="benefit-description">
+                      Export everything as a ZIP. Back up anywhere, migrate anytime.
+                    </p>
+                  </div>
+                </div>
+                <div class="benefit-item">
+                  <svg
+                    class="benefit-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                  <div>
+                    <h3 class="benefit-title">Developer-Friendly</h3>
+                    <p class="benefit-description">
+                      Parse, script, and automate your data with any tool that reads markdown.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="code-preview">
+              <div class="code-header">
+                <div class="code-dot red"></div>
+                <div class="code-dot yellow"></div>
+                <div class="code-dot green"></div>
+                <span class="code-filename">2026-04-21.md</span>
+              </div>
+              <pre class="code-content"><code>## 2026-04-21
+
+### 😴 @sleep
+
+- 23:00 💤 went to bed
+- 07:00 woke up | duration: 8h
+
+### 🏃 @fitness
+
+- 07:30 morning run | distance: 5 km | duration: 32m
+
+### 🥞 @food
+
+- 08:15 breakfast | notes: oatmeal, banana
+- 12:30 lunch | notes: chicken salad
+- 19:00 dinner | notes: pasta, veggies
+
+### ✅ @habits
+
+- 09:00 meditate | done: true | duration: 15m
+- 21:30 read | pages: 30 | duration: 45m</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Built for Simplicity</h2>
+            <p class="section-description">
+              Core features that make tracking effortless, without the bloat.
+            </p>
+          </div>
+
+          <div class="feature-grid-3">
+            <div class="feature-card">
+              <svg
+                class="feature-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                <line x1="16" x2="16" y1="2" y2="6"></line>
+                <line x1="8" x2="8" y1="2" y2="6"></line>
+                <line x1="3" x2="21" y1="10" y2="10"></line>
+              </svg>
+              <h3 class="feature-title">Daily Logs</h3>
+              <p class="feature-description">
+                One markdown file per day. Quick entries, easy review, simple structure.
+              </p>
+            </div>
+            <div class="feature-card">
+              <svg
+                class="feature-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <path d="M8 13h2"></path>
+                <path d="M14 13h2"></path>
+                <path d="M8 17h2"></path>
+                <path d="M14 17h2"></path>
+              </svg>
+              <h3 class="feature-title">Templates</h3>
+              <p class="feature-description">
+                Create custom templates for any routine. Daily habits, workouts, baby logs &mdash;
+                your call.
+              </p>
+            </div>
+            <div class="feature-card">
+              <svg
+                class="feature-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+              </svg>
+              <h3 class="feature-title">Optional iCloud Sync</h3>
+              <p class="feature-description">
+                End-to-end encrypted sync across your Apple devices. Disable anytime.
+              </p>
+            </div>
+            <div class="feature-card">
+              <svg
+                class="feature-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <h3 class="feature-title">Offline First</h3>
+              <p class="feature-description">
+                Works without internet. Track anytime, anywhere &mdash; on a plane, in the woods,
+                wherever.
+              </p>
+            </div>
+            <div class="feature-card">
+              <svg
+                class="feature-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" x2="12" y1="15" y2="3"></line>
+              </svg>
+              <h3 class="feature-title">Export Anything</h3>
+              <p class="feature-description">
+                Export all data as a ZIP with markdown files. Your data, your rules.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download CTA Section -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Start Tracking Today</h2>
+            <p class="section-description">
+              Free on iOS. No account needed. Your data stays on your device.
+            </p>
+          </div>
+
+          <div class="platforms-bottom">
+            <div class="download-buttons">
+              <a
+                href="https://apps.apple.com/us/app/markist/id6760238163"
+                style="display: inline-block"
+                target="_blank"
+              >
+                <img
+                  src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1744732800"
+                  alt="Download on the App Store"
+                  style="width: 164px; height: 55px; vertical-align: middle; object-fit: contain"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GitWriter Sister App -->
+      <section class="section">
+        <div class="container">
+          <a href="https://gitwriter.io" target="_blank" rel="noopener" class="sister-app-card">
+            <div class="sister-app-logo">
+              <img src="./gitwriter/logo.svg" alt="GitWriter" />
+            </div>
+            <div class="sister-app-text">
+              <span class="sister-app-tag">From the same developer</span>
+              <h3 class="sister-app-title">GitWriter</h3>
+              <p class="sister-app-description">
+                A writer-first mobile Markdown editor with deep GitHub integration. Write, edit, and
+                sync your markdown files anywhere.
+              </p>
+              <img src="./gitwriter/og.png" alt="GitWriter preview" class="sister-app-image" />
+              <span class="sister-app-link">GitWriter.io &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <nav class="footer-nav">
+            <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+            <a href="/terms.html" class="footer-link">Terms of Service</a>
+            <a href="mailto:brooks110@proton.me" class="footer-link">Contact</a>
+            <a href="https://gitwriter.io" class="footer-link" target="_blank" rel="noopener"
+              >GitWriter<span class="new-tag">New</span></a
+            >
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2026 Markist.app - All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./contour-animation.js"></script>
+  </body>
+</html>

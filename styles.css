@@ -168,6 +168,10 @@ h6 {
   text-decoration: underline;
 }
 
+.nav-link:hover .new-tag {
+  text-decoration: none !important;
+}
+
 @media (min-width: 768px) {
   .nav {
     display: flex;
@@ -704,6 +708,10 @@ h6 {
   text-decoration: underline;
 }
 
+.footer-link:hover .new-tag {
+  text-decoration: none !important;
+}
+
 .footer-bottom {
   margin-top: 1rem;
   text-align: center;
@@ -712,6 +720,73 @@ h6 {
 .copyright {
   font-size: 0.875rem;
   color: var(--muted-foreground);
+}
+
+/* ===== New Tag ===== */
+.new-tag {
+  font-size: 0.625rem;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.125rem 0.375rem;
+  border-radius: 9999px;
+  margin-left: 0.375rem;
+  font-weight: 600;
+  vertical-align: middle;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+/* ===== Sister App Card ===== */
+.sister-app-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: border-color 0.2s;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.sister-app-card:hover {
+  border-color: var(--primary);
+}
+
+.sister-app-logo img {
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+}
+
+.sister-app-tag {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sister-app-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.sister-app-description {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.sister-app-link {
+  font-size: 0.875rem;
+  color: var(--primary);
+}
+
+.sister-app-card:hover .sister-app-link {
+  text-decoration: underline;
 }
 
 /* ===== Legal Pages ===== */

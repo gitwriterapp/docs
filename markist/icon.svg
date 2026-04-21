@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 2x2 grid: 4px gap, 10px outer padding -->
+  <!-- TL: x=10, y=10, w=88, h=88 -->
+  <!-- TR: x=102, y=10, w=88, h=88 -->
+  <!-- BL: x=10, y=102, w=88, h=88 -->
+  <!-- BR: x=102, y=102, w=88, h=88 -->
+  <rect x="0"  y="0"  width="94" height="94" rx="8" fill="#21242c"/>
+  <rect x="106" y="0"  width="94" height="94" rx="8" fill="#21242c"/>
+  <rect x="0"  y="106" width="94" height="94" rx="8" fill="#21242c"/>
+  <rect x="106" y="106" width="94" height="94" rx="8" fill="#fd575b"/>
+  <defs>
+    <clipPath id="cTL"><rect x="0"  y="0"  width="94" height="94" rx="8"/></clipPath>
+    <clipPath id="cTR"><rect x="106" y="0"  width="94" height="94" rx="8"/></clipPath>
+    <clipPath id="cBL"><rect x="0"  y="106" width="94" height="94" rx="8"/></clipPath>
+  </defs>
+  <!-- LEFT leg centre: x=54 (10+88/2), RIGHT leg centre: x=146 (102+88/2) -->
+  <polyline clip-path="url(#cTL)"
+    points="44,169 44,40 100,114"
+    stroke="#fd575b" stroke-width="24"
+    stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <polyline clip-path="url(#cTR)"
+    points="100,114 158,40 158,169"
+    stroke="#fd575b" stroke-width="24"
+    stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <polyline clip-path="url(#cBL)"
+    points="44,31 44,160"
+    stroke="#fd575b" stroke-width="24"
+    stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Green tick centred in BR box (102,102 → 190,190), centre=146,146 -->
+  <polyline
+    points="128,150 150,180 180,128"
+    stroke="#21242c" stroke-width="16"
+    stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
